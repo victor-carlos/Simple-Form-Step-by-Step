@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+body{
+	background: url('bg.jpg');
+}
+
+form fieldset{
+	width: 600px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, .5);
+	transition: .5s;
+}
+
+form fieldset:hover{
+	background: rgba(255, 255, 255, 1);
+}
+
+form progress{
+	border: 1px solid #000;
+	background: #fff;
+	margin: 5px;
+}
+
+form fieldset legend{
+	padding: 10px;
+	font-size: 32px;
+	background: rgba(255, 255, 255, .5);
+	margin-top: 57px;
+	border: 1px solid #000;
+	display: block;
+}
+
+form fieldset{
+	border: 1px solid #000;
+}
+
+form fieldset ul{
+	list-style: none;
+}
+
+form fieldset ul li{
+	padding: 10px;
+}
+
+#btn_tab1, #btn_tab2, #btn_tab3, #btn_tab4{
+	text-align: center;
+	background: #000;
+	color: #fff;
+	transition: 1s;
+	text-transform: uppercase;
+}
+
+#btn_tab1:hover, #btn_tab2:hover, #btn_tab3:hover, #btn_tab4:hover{
+	font-weight: bold;
+	background: #333;
+}
+
+form fieldset ul li ol{
+	list-style: none;
+}
+
+.tabs{
+	padding: 20px;
+}
+
+#tabs p{
+	padding-top: 10px;
+}
+
+#tabs input{
+	border: 1px solid #000;
+	background: #fff;
+	padding: 5px;	
+}
+
+#tabs textarea{
+	border: 1px solid #000;
+	background: #fff;
+	padding: 5px;
+}
+
+#btn_next{
+	float: right;
+	margin: 10px;
+	transition: .3s;
+}
+
+#btn_next:hover{
+	background: #dfdfdf;
+}
+
+#notice{
+	color: #f00;
+	padding: 10px;
+}

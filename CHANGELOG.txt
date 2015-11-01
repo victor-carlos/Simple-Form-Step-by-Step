@@ -1,0 +1,5 @@
+1.0.0.0
+	Creation of functional files.
+1.0.1.1
+	Corrections in the stylesheet
+	

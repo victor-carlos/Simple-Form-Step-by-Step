@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <meta charset="UTF-8">
+    <title>JavaScript Utils</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form action="" method="post" oninput="return check();">
+      <fieldset> <legend>Tabs</legend>
+      <progress id="progress" value="0" max="100"></progress>
+        <ul>
+          <li id="btn_tab1">Step 1</li>
+          <li class="tabs" id="tabs">
+            <ol>
+              <li>
+              		<label for="name"><p>Name: </p></label><input type="text" name="name" id="name" /><br>
+              		<label for="age"><p>Age: </p></label><input type="number" name="age" id="age" min="1" max="120" value="1" />
+              		<br><br>
+              		<input type="button" name="next" id="btn_next" value="Next" onclick="nextTab()" />
+              		<input type="hidden" name="tab" id="tab" value="1" />
+              </li>
+            </ol>
+          </li>
+          
+          <li id="btn_tab2" style="display: none;">Step 2</li>
+          <li class="tabs" id="tabs" style="display: none;">
+            <ol>
+              <li>
+              		<label for="site"><p>Site: </p></label><input type="text" name="site" id="site" /><br>
+              		<label for="email"><p>Email: </p></label><input type="email" name="email" id="email" placeholder="name@domain.com" /><br>
+              		<br><br>
+              		<input type="button" name="next" id="btn_next" value="Next" onclick="nextTab()" />
+              </li>
+            </ol>
+          </li>
+          
+          <li id="btn_tab3" style="display: none;">Step 3</li>
+          <li class="tabs" id="tabs" style="display: none;">
+            <ol>
+              <li>
+              		<label for="address"><p>Message: </p></label><textarea name="message" id="message" /></textarea><br>
+              		
+              		<br><br>
+              		<input type="button" name="next" id="btn_next" value="Result" onclick="nextTab()" />
+              </li>
+            </ol>
+          </li>
+          
+          <li id="btn_tab4" style="display: none;">Result</li>
+          <li class="tabs" id="tabs" style="display: none;">
+            <ol>
+              <li><div id="result"></div></li>
+            </ol>
+          </li>
+          
+        </ul>
+        <div id="notice"></div>
+      </fieldset>
+      
+      
+    </form>
+  </body>
+</html>
